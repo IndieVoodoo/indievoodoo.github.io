@@ -1,0 +1,123 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* * * * * * * * * * * * * * * * * * * 
+ * Variables
+ * * * * * * * * * * * * * * * * * * */
+/* colours */
+/* sizes */
+/*fonts*/
+/* functions */
+body {
+  font-size: 100%;
+  background: repeating-linear-gradient(to right, #00a497, #00a497 3.75em, #f16300 3.75em, #f16300 7.5em);
+  min-width: 100%;
+  min-height: 100%; }
+  body > header {
+    width: 40%;
+    padding: 0 30%;
+    height: 12.5em;
+    background: white;
+    text-align: center; }
+  body #wrapper {
+    margin: auto;
+    width: 1000px; }
+    body #wrapper main {
+      background: rgba(255, 255, 255, 0.6);
+      width: 800px;
+      display: inline-block; }
+    body #wrapper aside {
+      display: inline-block;
+      width: 200px;
+      background: rgba(255, 255, 255, 0.6); }
+
+article {
+  background: white;
+  width: calc(100% - 60px);
+  margin: 1.25em;
+  padding: 0.625em; }
+  article figure {
+    width: 340px;
+    margin: auto;
+    background: #249cf4;
+    margin-top: 1.25em; }
+    article figure img {
+      margin: 1.25em 1.25em 0 1.25em; }
+    article figure figcaption {
+      font-family: "Droid Sans", sans-serif;
+      color: white;
+      text-align: center;
+      line-height: 1.5em; }
+  article header h1, article header h2 {
+    font-family: "Droid Serif", serif; }
+  article p {
+    text-indent: 1.25em;
+    padding-top: 1.25em; }
+
+header h1, header h2 {
+  font-family: "Syncopate", sans-serif; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Droid Serif", serif;
+  line-height: 1.75em; }
+
+h1 {
+  font-size: 2.25em; }
+
+h2 {
+  font-size: 1.5em; }
+
+h3 {
+  font-size: 1.3125em; }
+
+h4 {
+  font-size: 1.125em; }
+
+h5 {
+  font-size: 1em; }
+
+p {
+  font-family: "Droid Sans", sans-serif;
+  text-align: justify; }
+  p a {
+    font-size: 1em;
+    line-height: 1.5em; }
+
+a {
+  font-size: 1em; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,131 @@
+@import "_reset.scss";
+
+/* * * * * * * * * * * * * * * * * * * 
+ * Variables
+ * * * * * * * * * * * * * * * * * * */
+
+/* colours */
+$primaryGreen: #00a497;
+$primaryOrange: #f16300;
+
+/* sizes */
+$stripeWidth: 60;
+$padding: 20;
+
+/*fonts*/
+$titleFont: 'Syncopate', sans-serif;
+$headFont: 'Droid Serif', serif;
+$paraFont: 'Droid Sans', sans-serif;
+
+
+/* functions */
+@function em($target, $context: 16) {
+	@return ($target / $context) * 1em;
+}
+
+body {
+    font-size: 100%;
+    background: repeating-linear-gradient(
+        to right,
+        $primaryGreen,
+        $primaryGreen em($stripeWidth),
+        $primaryOrange em($stripeWidth),
+        $primaryOrange em($stripeWidth * 2)
+    );
+    
+    min-width: 100%;
+    min-height: 100%;
+    
+    >header {
+        width: 40%;
+        padding: 0 30%;
+        height: em(200);
+        background: white;
+        text-align: center;
+    }
+    
+    #wrapper {
+        margin: auto;
+        width: 1000px;
+        
+        main {
+            background: rgba(255, 255, 255, 0.6);
+            width: 800px;
+            display: inline-block;
+        }
+
+        aside {
+            display: inline-block;   
+            width: 200px;
+            background: rgba(255, 255, 255, 0.6);
+        }
+    }
+}
+
+article {
+    background: white;
+    width: calc(100% - 60px);
+    margin: em($padding);
+    padding: em($padding/2);
+    
+    figure{
+        width: 340px;
+        margin: auto;
+        background: #249cf4;
+        margin-top: em($padding);
+        
+        img {
+            margin: em($padding) em($padding) 0 em($padding);
+        }
+        
+        figcaption {
+            font-family: $paraFont;
+            color: white;
+            text-align: center;
+            line-height: 1.5em;
+        }
+    }
+    
+    header {
+        h1, h2 {
+            font-family: $headFont;
+        }
+    }
+    
+    p {
+        text-indent: em(20);
+        padding-top: em($padding);
+    }
+}
+
+header {
+    
+    h1 ,h2 {
+            font-family: $titleFont;
+    }
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $headFont;
+    line-height: em(28);
+}
+
+h1 { font-size: em(36); }
+h2 { font-size: em(24); }
+h3 { font-size: em(21); }
+h4 { font-size: em(18); }
+h5 { font-size: em(16); }
+
+p {
+    font-family:   $paraFont;
+    text-align: justify;
+    
+    a {
+        font-size: em(16);   
+        line-height: em(24);
+    }
+}
+
+a {
+    font-size: em(16);   
+}
