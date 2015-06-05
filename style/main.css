@@ -65,6 +65,8 @@ body {
       background: white;
       margin-top: 1.25em;
       vertical-align: top; }
+      body #wrapper aside section {
+        padding: 1.25em; }
 
 article {
   background: white;
@@ -112,13 +114,18 @@ h5 {
   font-size: 1em; }
 
 p {
+  text-align: justify;
   font-family: "Droid Sans", sans-serif;
-  text-align: justify; }
+  font-size: 1em;
+  line-height: 1.125em; }
   p a {
+    font-family: "Droid Sans", sans-serif;
     font-size: 1em;
-    line-height: 1.5em; }
+    line-height: 1.125em; }
 
 a {
-  font-size: 1em; }
+  font-family: "Droid Sans", sans-serif;
+  font-size: 1em;
+  line-height: 1.125em; }
 
 /*# sourceMappingURL=main.css.map */

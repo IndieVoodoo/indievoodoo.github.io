@@ -23,6 +23,12 @@ $paraFont: 'Droid Sans', sans-serif;
 	@return ($target / $context) * 1em;
 }
 
+@mixin ParaFontProperties() {    
+    font-family:   $paraFont;
+    font-size: em(16); 
+    line-height: em(18);  
+}
+
 body {
     font-size: 100%;
     background: repeating-linear-gradient(
@@ -59,6 +65,20 @@ body {
             background: rgb(255, 255, 255);
             margin-top: em($padding);
             vertical-align: top;
+            
+            section {
+                padding: em($padding);
+                
+                ul {
+                    
+                    li {
+                        
+                        a {
+                            
+                        }
+                    }
+                }
+            }  
         }
     }
 }
@@ -118,15 +138,14 @@ h4 { font-size: em(18); }
 h5 { font-size: em(16); }
 
 p {
-    font-family:   $paraFont;
     text-align: justify;
+    @include ParaFontProperties();
     
     a {
-        font-size: em(16);   
-        line-height: em(24);
+    @include ParaFontProperties();
     }
 }
 
 a {
-    font-size: em(16);   
+    @include ParaFontProperties();
 }
