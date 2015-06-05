@@ -49,15 +49,16 @@ body {
         width: 1000px;
         
         main {
-            background: rgba(255, 255, 255, 0.6);
-            width: 800px;
+            width: 700px;
             display: inline-block;
         }
 
         aside {
             display: inline-block;   
-            width: 200px;
-            background: rgba(255, 255, 255, 0.6);
+            width: 300px;
+            background: rgb(255, 255, 255);
+            margin-top: em($padding);
+            vertical-align: top;
         }
     }
 }
@@ -65,8 +66,8 @@ body {
 article {
     background: white;
     width: calc(100% - 60px);
-    margin: em($padding);
-    padding: em($padding/2);
+    margin: em($padding) em($padding) em($padding) 0;
+    padding: em($padding);
     
     figure{
         width: 340px;
