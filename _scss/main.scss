@@ -48,6 +48,22 @@ body {
         height: em(200);
         background: white;
         text-align: center;
+        
+        nav {
+            margin-top: em($padding);
+            
+            ul {
+                
+                li {
+                    display: inline-block;
+                    margin: em($padding);
+                    
+                    a {
+                        
+                    }
+                }  
+            }
+        }
     }
     
     #wrapper {
@@ -72,6 +88,7 @@ body {
                 ul {
                     
                     li {
+                        padding: em($padding/2);
                         
                         a {
                             
@@ -148,4 +165,5 @@ p {
 
 a {
     @include ParaFontProperties();
+    color: $primaryGreen;
 }

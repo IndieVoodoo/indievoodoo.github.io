@@ -53,6 +53,11 @@ body {
     height: 12.5em;
     background: white;
     text-align: center; }
+    body > header nav {
+      margin-top: 1.25em; }
+      body > header nav ul li {
+        display: inline-block;
+        margin: 1.25em; }
   body #wrapper {
     margin: auto;
     width: 1000px; }
@@ -67,6 +72,8 @@ body {
       vertical-align: top; }
       body #wrapper aside section {
         padding: 1.25em; }
+        body #wrapper aside section ul li {
+          padding: 0.625em; }
 
 article {
   background: white;
@@ -126,6 +133,7 @@ p {
 a {
   font-family: "Droid Sans", sans-serif;
   font-size: 1em;
-  line-height: 1.125em; }
+  line-height: 1.125em;
+  color: #00a497; }
 
 /*# sourceMappingURL=main.css.map */
