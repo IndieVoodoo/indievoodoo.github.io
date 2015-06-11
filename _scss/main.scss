@@ -31,14 +31,15 @@ $paraFont: 'Droid Sans', sans-serif;
 
 body {
     font-size: 100%;
-    background: repeating-linear-gradient(
+    /*background: repeating-linear-gradient(
         to right,
         $primaryGreen,
         $primaryGreen em($stripeWidth),
         $primaryOrange em($stripeWidth),
         $primaryOrange em($stripeWidth * 2)
-    );
+    );*/
     
+    background: white;
     min-width: 100%;
     min-height: 100%;
     
