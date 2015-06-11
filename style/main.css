@@ -51,7 +51,7 @@ body {
       $primaryOrange em($stripeWidth),
       $primaryOrange em($stripeWidth * 2)
   );*/
-  background: #f2f2f2;
+  background: #ffffff;
   min-width: 100%;
   min-height: 100%; }
   body > header {
